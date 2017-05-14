@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimensions for Margin & padding -->
+    <dimen name="buttonMargin">26dp</dimen>
+    <dimen name="marginBottom">10dp</dimen>
+
+    <!-- Dimension for Horizontal Lines (Views) -->
+    <dimen name="viewLines">1dp</dimen>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menu Action Bar -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item android:id="@+id/action_home"
+        android:title="@string/home"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_artists"
+          android:title="@string/artists"
+          app:showAsAction="never" />
+
+    <item android:id="@+id/action_songs"
+        android:title="@string/songs"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_albums"
+        android:title="@string/top_albums"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_top_songs"
+        android:title="@string/top_songs"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_playlist"
+        android:title="@string/playlist"
+        app:showAsAction="never" />
+
+
+</menu>

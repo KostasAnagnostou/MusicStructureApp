@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ScrollView Vertical -->
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.example.android.musicstructureapp.MainActivity"
+  style="@style/ScrollViewBG" >
+
+<!-- Main Layout - Linear Vertical -->
+<LinearLayout
+    style="@style/LinearLayoutMain" >
+
+     <!-- View for Horizontal Line -->
+    <View
+        style="@style/ViewsLines" />
+
+    <!-- Categories - Buttons-->
+    <Button
+        android:id="@+id/artists"
+        style="@style/CategoryButtons"
+        android:text="@string/artists" />
+
+    <Button
+        android:id="@+id/songs"
+        style="@style/CategoryButtons"
+        android:text="@string/songs" />
+
+    <Button
+        android:id="@+id/albums"
+        style="@style/CategoryButtons"
+        android:text="@string/top_albums" />
+
+    <Button
+        android:id="@+id/topsongs"
+        style="@style/CategoryButtons"
+        android:text="@string/top_songs" />
+
+    <Button
+        android:id="@+id/playlist"
+        style="@style/CategoryButtons"
+        android:text="@string/playlist" />
+
+    <!-- View for Horizontal Line -->
+    <View
+        style="@style/ViewsLines" />
+
+    <!-- Explanation Text for the Activity -->
+    <TextView
+        style="@style/ExplanationText"
+        android:text="@string/main_explanation" />
+
+
+</LinearLayout>
+</ScrollView>

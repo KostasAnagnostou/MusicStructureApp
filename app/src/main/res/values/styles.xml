@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:displayOptions">homeAsUp</item>
+    </style>
+
+    <!-- Style for ScrollView (activity_main) - Gradient Background Color -->
+    <style name="ScrollViewBG">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/background_main</item>
+    </style>
+
+    <!-- Style for Linear Layout vertical -->
+    <style name="LinearLayoutMain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Style for View Layout vertical -->
+    <style name="ViewsLines">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/viewLines</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMargin</item>
+    </style>
+
+    <!-- Style for buttons - activity_main -->
+    <style name="CategoryButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/buttonMargin</item>
+        <item name="android:layout_marginLeft">@dimen/buttonMargin</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+        <item name="android:paddingTop">@dimen/buttonMargin</item>
+        <item name="android:paddingBottom">@dimen/buttonMargin</item>
+        <item name="android:background">@drawable/button_custom</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        </style>
+
+    <!-- Style for TextView -->
+    <style name="ExplanationText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorYellowTransparent</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMargin</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:paddingRight">@dimen/buttonMargin</item>
+        <item name="android:paddingLeft">@dimen/buttonMargin</item>
+    </style>
+
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <!-- The texts of the app -->
+    <string name="app_name">Listening Music</string>
+    <string name="main_explanation">Explanation for this Screen. What the user can do in this activity</string>
+    <string name="home">Home</string>
+    <string name="artists">Artists</string>
+    <string name="songs">Songs</string>
+    <string name="top_albums">Top 10 Albums</string>
+    <string name="top_songs">Top 10 Songs</string>
+    <string name="playlist">My Playlist</string>
+</resources>
