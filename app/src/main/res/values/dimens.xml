@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Dimension for App Title Text -->
+    <dimen name="appTitle">24sp</dimen>
+
     <!-- Dimensions for Margin & padding -->
     <dimen name="buttonMargin">26dp</dimen>
     <dimen name="marginBottom">10dp</dimen>
+    <dimen name="marginVolumeIcon">12dp</dimen>
 
-    <!-- Dimension for Horizontal Lines (Views) -->
+    <!-- Dimensions for Horizontal Lines (Views) -->
     <dimen name="viewLines">1dp</dimen>
+
+    <!-- Dimensions for Cards -->
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="cardTitle">30sp</dimen>
+    <dimen name="cardMargin">16dp</dimen>
 
 </resources>

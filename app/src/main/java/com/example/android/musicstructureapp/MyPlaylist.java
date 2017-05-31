@@ -1,11 +1,15 @@
 package com.example.android.musicstructureapp;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MyPlaylist extends AppCompatActivity {
 
@@ -13,6 +17,27 @@ public class MyPlaylist extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_playlist);
+
+        // Setting up a toast when the floating button is clicked
+        FloatingActionButton FAB = (FloatingActionButton) findViewById(R.id.fab);
+        FAB.setOnClickListener(new View.OnClickListener() {
+                                   @Override
+                                   public void onClick(View v) {
+                                       Toast.makeText(MyPlaylist.this, "Create a new playlist", Toast.LENGTH_SHORT).show();
+                                   }
+                    });
+
+        // Find the ImageView that shows the Play Icon in Recent Playlist within activity_my_playlist.xml
+        ImageView playIcon =(ImageView) findViewById(R.id.play_icon_recent);
+        // Set a click listener on that View
+        playIcon.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the Play Icon in Recent Playlist is clicked on.
+            @Override
+            public void onClick(View v) {
+                Intent playIntent = new Intent(MyPlaylist.this, ListenSongActivity.class);
+                startActivity(playIntent);
+            }
+        });
     }
 
     // Setting up the App Bar Menu
@@ -42,15 +67,10 @@ public class MyPlaylist extends AppCompatActivity {
                 Intent songsIntent = new Intent(this, SongsActivity.class);
                 startActivity(songsIntent);
                 return true;
-            case R.id.action_albums:
-                // User chose the "Top Albums" item, show the app top albums UI...
-                Intent albumsIntent = new Intent(this, TopAlbumsActivity.class);
-                startActivity(albumsIntent);
-                return true;
-            case R.id.action_top_songs:
-                // User chose the "Top Songs" item, show the app top songs UI...
-                Intent topSongsIntent = new Intent(this, TopSongsActivity.class);
-                startActivity(topSongsIntent);
+            case R.id.action_topten:
+                // User chose the "Top 10" item, show the app top 10 UI...
+                Intent topTenIntent = new Intent(this, TopTenActivity.class);
+                startActivity(topTenIntent);
                 return true;
             case R.id.action_playlist:
                 // User chose the "My Playlist" item, show the app my playlist UI...

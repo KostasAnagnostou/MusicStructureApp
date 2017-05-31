@@ -1,11 +1,11 @@
 package com.example.android.musicstructureapp;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,27 +38,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the Top Albums category
-        Button albums = (Button) findViewById(R.id.albums);
+        // Find the View that shows the Top 10 category
+        Button topten = (Button) findViewById(R.id.top_ten);
         // Set a click listener on that View
-        albums.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the Top Albums View is clicked on.
+        topten.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the Top 10 View is clicked on.
             @Override
             public void onClick(View v) {
-                Intent albumsIntent = new Intent(MainActivity.this, TopAlbumsActivity.class);
-                startActivity(albumsIntent);
-            }
-        });
-
-        // Find the View that shows the Top 10 Songs category
-        Button topsongs = (Button) findViewById(R.id.topsongs);
-        // Set a click listener on that View
-        topsongs.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the Top 10 Songs View is clicked on.
-            @Override
-            public void onClick(View v) {
-                Intent topSongsIntent = new Intent(MainActivity.this, TopSongsActivity.class);
-                startActivity(topSongsIntent);
+                Intent toptenIntent = new Intent(MainActivity.this, TopTenActivity.class);
+                startActivity(toptenIntent);
             }
         });
 

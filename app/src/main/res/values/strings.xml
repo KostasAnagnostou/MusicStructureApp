@@ -1,11 +1,41 @@
 <resources>
     <!-- The texts of the app -->
-    <string name="app_name">Listening Music</string>
-    <string name="main_explanation">Explanation for this Screen. What the user can do in this activity</string>
+    <string name="app_name">Happy Music</string>
     <string name="home">Home</string>
     <string name="artists">Artists</string>
     <string name="songs">Songs</string>
-    <string name="top_albums">Top 10 Albums</string>
-    <string name="top_songs">Top 10 Songs</string>
-    <string name="playlist">My Playlist</string>
+    <string name="top_ten">Top 10</string>
+    <string name="playlist">My Playlists</string>
+    <string name="listen_song">Now Playing</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="artist_description">Artist Description</string>
+    <string name="search_artists">Search your favorite Artist</string>
+    <string name="search_songs">Search your favorite Song</string>
+    <string name="search_playlists">Search your Playlists</string>
+    <string name="song_title">Song Title</string>
+    <string name="song_description">Song Description</string>
+    <string name="top_ten_songs">Top Songs</string>
+    <string name="top_ten_albums">Top Albums</string>
+    <string name="top_ten_artists">Top Artists</string>
+    <string name="recent_playlist">Recent Playlist</string>
+    <string name="reggae">Reggae Music</string>
+    <string name="other_playlists">Other Playlists</string>
+    <string name="next_song">Next Songs</string>
+
+    <!-- Explanation texts for each activity -->
+    <string name="main_explanation">Explanation for Main Activity: The user can choose to navigate to 4 categories (activities): Artists, Songs, Top 10  and My Playlists. </string>
+    <string name="artists_explanation">Explanation for Artists Activity: The user here can see a list from artists that will be available to choose. We will use ListView + custom ArrayAdapter for this and one more activity for each Artist Layout. Also we will have a search bar to help the user find quickly his favorite artist. Lastly the user can navigate to other activities from the menu (top right).</string>
+    <string name="songs_explanation">Explanation for Songs Activity: The user here can see a list from songs that will be available to choose. We will use ListView + custom ArrayAdapter for this. If we click the songs here, we will open the ListenSongActivity (the layout for each song). Also we will have a search bar to help the user find quickly his favorite song. Lastly the user can navigate to other activities from the menu (top right). </string>
+    <string name="top_ten_explanation">Explanation for Top Ten Activity: The user here can see the Top 10 Songs, Top 10 Albums and Top 10 Artists (Now i have 5 images to each category, but will have 10). If the user click the images in top songs, will open the ListenSongActivity (the layout for each song). The concept is the same for Top Albums and Top Artists (but now i dont have those two activities for each album and artist). I am not sure though how to achieve this layout dynamically. Lastly the user can navigate to other activities from the menu (top right). </string>
+    <string name="my_playlist_explanation">Explanation for My Playlists Activity: Here the user can see the most Recent Playlist and his Other Playlists. Also we will have a search bar to help the user find quickly his favorite playlist and a floating action button to create a new Playlist. If we click now the play icon within Recent Playlist, we will open the ListenSongActivity, but we will have a ListenPlaylistActivity for this action. Lastly the user can navigate to other activities from the menu (top right). </string>
+    <string name="listen_song_explanation">Explanation for Listen Song Acitvity: Here the user will be able to listen the songs. For this purpose we will use ExoPlayer Library (an extensible media player for Android). Also we will provide more songs for the user (with the next songs category). Lastly the user can navigate to other activities from the menu (top right).   </string>
+
+    <!-- Content Decscription for Images -->
+    <string name="music_image">Music Image</string>
+    <string name="artist_image">Artist Image</string>
+    <string name="song_image">Song Image</string>
+    <string name="album_image">Album Image</string>
+    <string name="play_icon">Play Icon</string>
+    <string name="volume_icon">Volume Icon</string>
+    <string name="skip_icon">Skip Icon</string>
 </resources>

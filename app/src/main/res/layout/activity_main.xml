@@ -3,7 +3,6 @@
 <!-- ScrollView Vertical -->
 <ScrollView
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   tools:context="com.example.android.musicstructureapp.MainActivity"
   style="@style/ScrollViewBG" >
@@ -12,44 +11,52 @@
 <LinearLayout
     style="@style/LinearLayoutMain" >
 
-     <!-- View for Horizontal Line -->
-    <View
-        style="@style/ViewsLines" />
+    <!-- Music Image (png) -->
+    <ImageView
+        style="@style/MusicImage"
+        android:src="@drawable/music"
+        android:contentDescription="@string/music_image"
+        />
 
-    <!-- Categories - Buttons-->
+    <!-- Categories - Buttons -->
     <Button
         android:id="@+id/artists"
         style="@style/CategoryButtons"
-        android:text="@string/artists" />
+        android:drawableBottom="@drawable/disc32"
+        android:text="@string/artists"
+        />
 
     <Button
         android:id="@+id/songs"
         style="@style/CategoryButtons"
-        android:text="@string/songs" />
+        android:drawableBottom="@drawable/songs25"
+        android:text="@string/songs"
+        />
 
     <Button
-        android:id="@+id/albums"
+        android:id="@+id/top_ten"
         style="@style/CategoryButtons"
-        android:text="@string/top_albums" />
-
-    <Button
-        android:id="@+id/topsongs"
-        style="@style/CategoryButtons"
-        android:text="@string/top_songs" />
+        android:drawableBottom="@drawable/top32"
+        android:text="@string/top_ten"
+        />
 
     <Button
         android:id="@+id/playlist"
         style="@style/CategoryButtons"
-        android:text="@string/playlist" />
+        android:drawableBottom="@drawable/playlist36"
+        android:text="@string/playlist"
+        />
 
-    <!-- View for Horizontal Line -->
+    <!-- Horizontal Line (View) -->
     <View
-        style="@style/ViewsLines" />
+        style ="@style/ViewsLines"
+        />
 
     <!-- Explanation Text for the Activity -->
     <TextView
         style="@style/ExplanationText"
-        android:text="@string/main_explanation" />
+        android:text="@string/main_explanation"
+        />
 
 
 </LinearLayout>

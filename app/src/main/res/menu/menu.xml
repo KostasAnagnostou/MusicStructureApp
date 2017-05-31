@@ -15,12 +15,8 @@
         android:title="@string/songs"
         app:showAsAction="never" />
 
-    <item android:id="@+id/action_albums"
-        android:title="@string/top_albums"
-        app:showAsAction="never" />
-
-    <item android:id="@+id/action_top_songs"
-        android:title="@string/top_songs"
+    <item android:id="@+id/action_topten"
+        android:title="@string/top_ten"
         app:showAsAction="never" />
 
     <item android:id="@+id/action_playlist"

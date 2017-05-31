@@ -1,12 +1,30 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:displayOptions">homeAsUp</item>
+
+        <!-- Style for the action bar -->
+        <item name="actionBarStyle">@style/MyActionBarLogo</item>
+    </style>
+
+    <!--
+          Style for the action bar - basically it shows the logo & title and sets the background color
+    -->
+    <style name="MyActionBarLogo" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/colorWhite</item>
+        <item name="titleTextStyle">@style/MyActionBarTitle</item>
+        <item name="logo">@drawable/logo_with_padding</item>
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
+    </style>
+
+    <!-- style for the action bar title -->
+    <style name="MyActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">@dimen/appTitle</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <!-- Style for ScrollView (activity_main) - Gradient Background Color -->
@@ -16,19 +34,26 @@
         <item name="android:background">@drawable/background_main</item>
     </style>
 
-    <!-- Style for Linear Layout vertical -->
+    <!-- Style for main layout - Linear Layout vertical -->
     <style name="LinearLayoutMain">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
     </style>
 
-    <!-- Style for View Layout vertical -->
+    <!-- Style for Music Image (activity_main.xml)-->
+    <style name="MusicImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- Style for Horizontal View (Horizontal Line) -->
     <style name="ViewsLines">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/viewLines</item>
         <item name="android:background">@color/colorWhite</item>
-        <item name="android:layout_marginBottom">@dimen/buttonMargin</item>
+        <item name="android:layout_marginBottom">@dimen/viewLines</item>
     </style>
 
     <!-- Style for buttons - activity_main -->
@@ -38,23 +63,192 @@
         <item name="android:layout_marginRight">@dimen/buttonMargin</item>
         <item name="android:layout_marginLeft">@dimen/buttonMargin</item>
         <item name="android:layout_marginBottom">@dimen/marginBottom</item>
-        <item name="android:paddingTop">@dimen/buttonMargin</item>
-        <item name="android:paddingBottom">@dimen/buttonMargin</item>
+        <item name="android:paddingTop">@dimen/marginBottom</item>
+        <item name="android:paddingBottom">@dimen/marginBottom</item>
         <item name="android:background">@drawable/button_custom</item>
         <item name="android:fontFamily">casual</item>
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textStyle">bold</item>
         </style>
 
-    <!-- Style for TextView -->
+    <!-- Style for Explanation Text (TextView) -->
     <style name="ExplanationText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/colorYellowTransparent</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:layout_marginBottom">@dimen/buttonMargin</item>
         <item name="android:fontFamily">casual</item>
         <item name="android:paddingRight">@dimen/buttonMargin</item>
         <item name="android:paddingLeft">@dimen/buttonMargin</item>
+        <item name="android:layout_marginTop">@dimen/marginBottom</item>
+    </style>
+
+    <!-- Style for Cards -->
+    <style name="CardsStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Style for Relative Layout (it is inside the cards)-->
+    <style name="RelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/cardMargin</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <!-- Style for ImageView Inside the cards -->
+    <style name="CardImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/cardMargin</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <!-- Style for 1st TextView Inside the card (Title)-->
+    <style name="CardTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:textSize">@dimen/cardTitle</item>
+    </style>
+
+    <!-- Style for 2nd TextView Inside the card (Description)-->
+    <style name="CardDescription">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Style for EdiText (Search Artists, Songs, etc) -->
+    <style name="SearchStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:paddingLeft">@dimen/cardMargin</item>
+        <item name="android:paddingRight">@dimen/cardMargin</item>
+        <item name="android:paddingStart">@dimen/cardMargin</item>
+        <item name="android:paddingTop">@dimen/cardMargin</item>
+        <item name="android:paddingBottom">@dimen/cardMargin</item>
+        <item name="android:drawableLeft">@drawable/searchicon</item>
+        <item name="android:drawableStart">@drawable/searchicon</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for Titles (TextViews) inside the Top Ten Screen (activity_top_ten)-->
+    <style name="TopTenTitles">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/cardTitle</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/cardMargin</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/colorBlackTransparent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!-- Style for ImageViews inside the Top Ten Screen (activity_top_ten) -->
+    <style name="TopTenImages">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+    <!-- Style for Nested Relative Layout within activity_my_playlist.xml & activity_listen_song-->
+    <style name="RelativePlaylist">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <!-- Style for Recent Playlist Image within activity_my_playlist.xml -->
+    <style name="ImageRecentPlaylist">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Style for Recent Play Icon Image within activity_my_playlist.xml -->
+    <style name="RecentPlayIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- Style for Recent Playlist TextView within activity_my_playlist.xml -->
+    <style name="TextRecentPlaylist">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorWhiteTransparent</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for Horizontal ScrollView -->
+    <style name="HorizontalScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Style for Horizontal Linear Layout -->
+    <style name="HorizontalLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Style for  Play Icon within Other Playlists  -->
+    <style name="PlaylistsPlayIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- Style for Floating Action Button (add button within activity_my_playlist.xml)  -->
+    <style name="FloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- Style for Volume Icon within activity_listen_song.xml -->
+    <style name="VolumeIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/marginVolumeIcon</item>
+    </style>
+
+    <!-- Style for Seek Bar within activity_listen_song.xml -->
+    <style name="SeekBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">10</item>
+        <item name="android:progressTint">@color/colorPink</item>
+        <item name="android:thumbTint">@color/colorPink</item>
+        <item name="android:layout_toEndOf">@id/volume</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <!-- Style for skip & play icons within activity_listen_song.xml -->
+    <style name="SkipPlayIcon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
     </style>
 
 </resources>
