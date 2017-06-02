@@ -69,7 +69,7 @@
         <item name="android:fontFamily">casual</item>
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textStyle">bold</item>
-        </style>
+    </style>
 
     <!-- Style for Explanation Text (TextView) -->
     <style name="ExplanationText">

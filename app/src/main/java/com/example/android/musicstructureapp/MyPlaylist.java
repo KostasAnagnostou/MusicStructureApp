@@ -1,9 +1,9 @@
 package com.example.android.musicstructureapp;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -21,14 +21,14 @@ public class MyPlaylist extends AppCompatActivity {
         // Setting up a toast when the floating button is clicked
         FloatingActionButton FAB = (FloatingActionButton) findViewById(R.id.fab);
         FAB.setOnClickListener(new View.OnClickListener() {
-                                   @Override
-                                   public void onClick(View v) {
-                                       Toast.makeText(MyPlaylist.this, "Create a new playlist", Toast.LENGTH_SHORT).show();
-                                   }
-                    });
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MyPlaylist.this, "Create a new playlist", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         // Find the ImageView that shows the Play Icon in Recent Playlist within activity_my_playlist.xml
-        ImageView playIcon =(ImageView) findViewById(R.id.play_icon_recent);
+        ImageView playIcon = (ImageView) findViewById(R.id.play_icon_recent);
         // Set a click listener on that View
         playIcon.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the Play Icon in Recent Playlist is clicked on.
@@ -42,7 +42,7 @@ public class MyPlaylist extends AppCompatActivity {
 
     // Setting up the App Bar Menu
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
@@ -50,8 +50,8 @@ public class MyPlaylist extends AppCompatActivity {
 
     // Responding to Actions on the menu
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
             case R.id.action_home:
                 // User chose the "Home" item, show the app Home UI...
                 Intent homeIntent = new Intent(this, MainActivity.class);

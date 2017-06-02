@@ -1,8 +1,8 @@
 package com.example.android.musicstructureapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -17,7 +17,7 @@ public class TopTenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_top_ten);
 
         // Find the ImageView that shows the 1st Song in activity_top_ten.xml
-        ImageView songEminem =(ImageView) findViewById(R.id.eminem);
+        ImageView songEminem = (ImageView) findViewById(R.id.eminem);
         // Set a click listener on that View
         songEminem.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the 1st ImageView in Top Songs is clicked on.
@@ -29,7 +29,7 @@ public class TopTenActivity extends AppCompatActivity {
         });
 
         // Find the ImageView that shows the 2nd Song in activity_top_ten.xml
-        ImageView songAlphaBlondy =(ImageView) findViewById(R.id.alpha_blondy);
+        ImageView songAlphaBlondy = (ImageView) findViewById(R.id.alpha_blondy);
         // Set a click listener on that View
         songAlphaBlondy.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the 2nd ImageView in Top Songs is clicked on.
@@ -41,7 +41,7 @@ public class TopTenActivity extends AppCompatActivity {
         });
 
         // Find the ImageView that shows the 3rd Song in activity_top_ten.xml
-        ImageView songAdele =(ImageView) findViewById(R.id.adele);
+        ImageView songAdele = (ImageView) findViewById(R.id.adele);
         // Set a click listener on that View
         songAdele.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the 3rd ImageView in Top Songs is clicked on.
@@ -53,7 +53,7 @@ public class TopTenActivity extends AppCompatActivity {
         });
 
         // Find the ImageView that shows the 4th Song in activity_top_ten.xml
-        ImageView songMarley =(ImageView) findViewById(R.id.bob_marley);
+        ImageView songMarley = (ImageView) findViewById(R.id.bob_marley);
         // Set a click listener on that View
         songMarley.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the 4th ImageView in Top Songs is clicked on.
@@ -65,7 +65,7 @@ public class TopTenActivity extends AppCompatActivity {
         });
 
         // Find the ImageView that shows the 5th Song in activity_top_ten.xml
-        ImageView songEminem1 =(ImageView) findViewById(R.id.eminem1);
+        ImageView songEminem1 = (ImageView) findViewById(R.id.eminem1);
         // Set a click listener on that View
         songEminem1.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the 5th ImageView in Top Songs is clicked on.
@@ -79,7 +79,7 @@ public class TopTenActivity extends AppCompatActivity {
 
     // Setting up the App Bar Menu
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
@@ -87,8 +87,8 @@ public class TopTenActivity extends AppCompatActivity {
 
     // Responding to Actions on the menu
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
             case R.id.action_home:
                 // User chose the "Home" item, show the app Home UI...
                 Intent homeIntent = new Intent(this, MainActivity.class);

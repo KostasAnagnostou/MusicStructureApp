@@ -16,8 +16,8 @@ public class ListenSongActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listen_song);
 
-       // Find the ImageView that shows the Play Icon
-       final ImageView playIcon = (ImageView) findViewById(R.id.play_icon);
+        // Find the ImageView that shows the Play Icon
+        final ImageView playIcon = (ImageView) findViewById(R.id.play_icon);
         // Set a click listener on that View
         playIcon.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the Play Icon View is clicked on.
@@ -30,7 +30,7 @@ public class ListenSongActivity extends AppCompatActivity {
 
     // Setting up the App Bar Menu
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
@@ -38,8 +38,8 @@ public class ListenSongActivity extends AppCompatActivity {
 
     // Responding to Actions on the menu
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
             case R.id.action_home:
                 // User chose the "Home" item, show the app Home UI...
                 Intent homeIntent = new Intent(this, MainActivity.class);

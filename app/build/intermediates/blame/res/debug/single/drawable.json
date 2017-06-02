@@ -32,12 +32,12 @@
         "source": "C:\\Users\\Kostas\\.android\\build-cache\\da13e753de13a6842158b01f16562c16dc1a6e21\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "C:\\Users\\Kostas\\Documents\\MusicStructureApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_add_white_24dp.png",
-        "source": "C:\\Users\\Kostas\\Documents\\MusicStructureApp\\app\\src\\main\\res\\drawable\\ic_add_white_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\Kostas\\Documents\\MusicStructureApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_pink.png",
         "source": "C:\\Users\\Kostas\\Documents\\MusicStructureApp\\app\\src\\main\\res\\drawable\\logo_pink.png"
+    },
+    {
+        "merged": "C:\\Users\\Kostas\\Documents\\MusicStructureApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_add_white_24dp.png",
+        "source": "C:\\Users\\Kostas\\Documents\\MusicStructureApp\\app\\src\\main\\res\\drawable\\ic_add_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Kostas\\Documents\\MusicStructureApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disc32.png",

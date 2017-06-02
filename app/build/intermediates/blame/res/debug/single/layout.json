@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Kostas\\.android\\build-cache\\8ec15c73ff7c640fd86cdbe411df2c5b4f895481\\output\\res\\layout\\design_navigation_item_header.xml"
     },
     {
-        "merged": "C:\\Users\\Kostas\\Documents\\MusicStructureApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\Kostas\\.android\\build-cache\\da13e753de13a6842158b01f16562c16dc1a6e21\\output\\res\\layout\\notification_template_lines_media.xml"
-    },
-    {
         "merged": "C:\\Users\\Kostas\\Documents\\MusicStructureApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
         "source": "C:\\Users\\Kostas\\.android\\build-cache\\da13e753de13a6842158b01f16562c16dc1a6e21\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kostas\\Documents\\MusicStructureApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\Kostas\\.android\\build-cache\\da13e753de13a6842158b01f16562c16dc1a6e21\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "C:\\Users\\Kostas\\Documents\\MusicStructureApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_playlist.xml",

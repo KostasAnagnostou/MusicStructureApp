@@ -1,63 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- ScrollView Vertical -->
-<ScrollView
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
-  tools:context="com.example.android.musicstructureapp.MainActivity"
-  style="@style/ScrollViewBG" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScrollViewBG"
+    tools:context="com.example.android.musicstructureapp.MainActivity">
 
-<!-- Main Layout - Linear Vertical -->
-<LinearLayout
-    style="@style/LinearLayoutMain" >
+    <!-- Main Layout - Linear Vertical -->
+    <LinearLayout style="@style/LinearLayoutMain">
 
-    <!-- Music Image (png) -->
-    <ImageView
-        style="@style/MusicImage"
-        android:src="@drawable/music"
-        android:contentDescription="@string/music_image"
-        />
+        <!-- Music Image (png) -->
+        <ImageView
+            style="@style/MusicImage"
+            android:contentDescription="@string/music_image"
+            android:src="@drawable/music" />
 
-    <!-- Categories - Buttons -->
-    <Button
-        android:id="@+id/artists"
-        style="@style/CategoryButtons"
-        android:drawableBottom="@drawable/disc32"
-        android:text="@string/artists"
-        />
+        <!-- Categories - Buttons -->
+        <Button
+            android:id="@+id/artists"
+            style="@style/CategoryButtons"
+            android:drawableBottom="@drawable/disc32"
+            android:text="@string/artists" />
 
-    <Button
-        android:id="@+id/songs"
-        style="@style/CategoryButtons"
-        android:drawableBottom="@drawable/songs25"
-        android:text="@string/songs"
-        />
+        <Button
+            android:id="@+id/songs"
+            style="@style/CategoryButtons"
+            android:drawableBottom="@drawable/songs25"
+            android:text="@string/songs" />
 
-    <Button
-        android:id="@+id/top_ten"
-        style="@style/CategoryButtons"
-        android:drawableBottom="@drawable/top32"
-        android:text="@string/top_ten"
-        />
+        <Button
+            android:id="@+id/top_ten"
+            style="@style/CategoryButtons"
+            android:drawableBottom="@drawable/top32"
+            android:text="@string/top_ten" />
 
-    <Button
-        android:id="@+id/playlist"
-        style="@style/CategoryButtons"
-        android:drawableBottom="@drawable/playlist36"
-        android:text="@string/playlist"
-        />
+        <Button
+            android:id="@+id/playlist"
+            style="@style/CategoryButtons"
+            android:drawableBottom="@drawable/playlist36"
+            android:text="@string/playlist" />
 
-    <!-- Horizontal Line (View) -->
-    <View
-        style ="@style/ViewsLines"
-        />
+        <!-- Horizontal Line (View) -->
+        <View style="@style/ViewsLines" />
 
-    <!-- Explanation Text for the Activity -->
-    <TextView
-        style="@style/ExplanationText"
-        android:text="@string/main_explanation"
-        />
+        <!-- Explanation Text for the Activity -->
+        <TextView
+            style="@style/ExplanationText"
+            android:text="@string/main_explanation" />
 
 
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>
